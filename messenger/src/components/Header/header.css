@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.header .header-app {
+  display: flex;
+  padding: 8px 14px 18px 21px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #005047;
+}
+.header .header-app .time h4 {
+  color: white;
+}
+.header .header-app .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.header .body-app {
+  background-color: #075e54;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .body-app .text h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.header .body-app .search-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.header .body-app .search-box a {
+  text-decoration: none;
+  color: white;
+}
+.header .body-app .search-box a i {
+  width: 20.016px;
+  height: 20.016px;
+  flex-shrink: 0;
+}
+.header .footer-app {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #075e54;
+}
+.header .footer-app .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #075e54;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .footer-app .box img {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}/*# sourceMappingURL=header.css.map */
