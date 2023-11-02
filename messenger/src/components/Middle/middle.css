@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 1px 0px gray;
+  background-color: white;
+  border-radius: 20px;
+}
+.main .profile-box {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: row;
+  gap: 10px;
+}
+.main .profile-box .img-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main .profile-box .img-box img {
+  border: none;
+  border-radius: 50%;
+}
+.main .profile-box .info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .profile-box .info-box .nameTime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .profile-box .info-box .nameTime h3 {
+  color: #4e4e4e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .profile-box .info-box .nameTime h5 {
+  color: #9d9d9d;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .profile-box .info-box .tickText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.main .profile-box .info-box .tickText a {
+  text-decoration: none;
+}
+.main .profile-box .info-box .tickText a i {
+  color: #00e676;
+}
+.main .profile-box .info-box .tickText h5 {
+  color: #9d9d9d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}/*# sourceMappingURL=middle.css.map */
