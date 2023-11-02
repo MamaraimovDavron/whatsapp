@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #005047;
+    border-radius: 20px 20px 0 0;
     .time {
       h4 {
         color: white;
@@ -71,28 +72,69 @@
   }
 
   .footer-app {
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    // justify-content: center;
     background-color: #075e54;
+    // width: 100%;
+    padding: 10px 20px;
+    gap: 20px;
+    position: relative;
+
     .box {
-      width: 100px;
-      height: 100px;
-      border: 1px solid #075e54;
-      //   border-radius: 50%;
       display: flex;
+      // border: 1px solid;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 10px;
 
-      img {
-        border: 1px solid red;
-        width: 50px;
-        height: 50px;
+      .avatar {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #377d75;
         border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          width: 58px;
+          height: 58px;
+          border-radius: 50%;
+        }
+
+        #imgMini {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          top: 40px;
+          left: 40px;
+        }
+      }
+
+      .text {
+        h5 {
+          color: #fff;
+
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 450;
+          line-height: normal;
+          letter-spacing: -0.333px;
+        }
+      }
+      #green1 {
+        border: 3px solid #00bfa5;
+      }
+
+      #green2 {
+        border: 3px solid #00bfa5;
       }
     }
   }

@@ -4,6 +4,11 @@ import connection from "../../icons/Cellular Connection.png";
 import wifi from "../../icons/Wifi.png";
 import battery from "../../icons/Battery.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import img1 from "../../images/Ellipse 6.png";
+import img2 from "../../images/Ellipse 7.png";
+import img3 from "../../images/Ellipse 8.png";
+import img4 from "../../images/Ellipse 9.png";
+import imgMini from "../../images/Group 21.png";
 
 const Header = () => {
   return (
@@ -33,34 +38,39 @@ const Header = () => {
       </div>
       <div className="footer-app">
         <div className="box">
-          <div className="textImg">
-            <img src="" alt="" />
-            <h5>My Status</h5>
-            <span>{/* <img src="" alt="" /> */}</span>
+          <div className="avatar">
+            <img src={img1} alt="" />
+            <img src={imgMini} alt="" id="imgMini" />
+          </div>
+          <div className="text">
+            <h5>My status</h5>
           </div>
         </div>
+
         <div className="box">
-          <div className="textImg">
-            <img src="" alt="" />
+          <div className="avatar">
+            <img src={img2} alt="" />
+          </div>
+          <div className="text">
             <h5>Digital Ghumti</h5>
           </div>
         </div>
+
         <div className="box">
-          <div className="textImg">
-            <img src="" alt="" />
+          <div className="avatar" id="green1">
+            <img src={img3} alt="" />
+          </div>
+          <div className="text">
             <h5>Cinemaghar App</h5>
           </div>
         </div>
+
         <div className="box">
-          <div className="textImg">
-            <img src="" alt="" />
-            <h5>Abhishek Dai</h5>
+          <div className="avatar" id="green2">
+            <img src={img4} alt="" />
           </div>
-        </div>
-        <div className="box">
-          <div className="textImg">
-            <img src="" alt="" />
-            <h5>Sagar Dai</h5>
+          <div className="text">
+            <h5>Abhishek Dai</h5>
           </div>
         </div>
       </div>
