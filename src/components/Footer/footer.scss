@@ -1,11 +1,11 @@
-.footer {
-  //   border: 1px solid red;
-  border-top: 1px solid #ebebeb;
+.light {
+  // border: 1px solid red;
+  // border-top: 1px solid #ebebeb;
   display: flex;
   flex-direction: row;
   padding: 10px 70px;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: center;
   .btns {
     // border: 1px solid;
     display: flex;
@@ -34,6 +34,57 @@
 
     .second {
       color: #4e4e4e;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      //   font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.dark {
+  // border: 1px solid red;
+  // border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 70px;
+  align-items: center;
+  // justify-content: center;
+  .btns {
+    // border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      a {
+        color: #00bfa5;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .first {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .second {
+      color: white;
       text-decoration: none;
       display: flex;
       align-items: center;

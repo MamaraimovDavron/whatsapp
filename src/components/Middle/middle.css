@@ -5,34 +5,35 @@
   background-color: white;
   border-radius: 20px;
 }
-.main .profile-box {
+.main .light {
   display: flex;
   padding: 10px 20px;
   flex-direction: row;
   gap: 10px;
+  background-color: #fff;
 }
-.main .profile-box .img-box {
+.main .light .img-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.main .profile-box .img-box img {
+.main .light .img-box img {
   border: none;
   border-radius: 50%;
 }
-.main .profile-box .info-box {
+.main .light .info-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.main .profile-box .info-box .nameTime {
+.main .light .info-box .nameTime {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.main .profile-box .info-box .nameTime h3 {
+.main .light .info-box .nameTime h3 {
   color: #4e4e4e;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -40,7 +41,7 @@
   line-height: normal;
   letter-spacing: -0.333px;
 }
-.main .profile-box .info-box .nameTime h5 {
+.main .light .info-box .nameTime h5 {
   color: #9d9d9d;
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
@@ -50,20 +51,88 @@
   line-height: normal;
   letter-spacing: -0.333px;
 }
-.main .profile-box .info-box .tickText {
+.main .light .info-box .tickText {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-.main .profile-box .info-box .tickText a {
+.main .light .info-box .tickText a {
   text-decoration: none;
 }
-.main .profile-box .info-box .tickText a i {
+.main .light .info-box .tickText a i {
   color: #00e676;
 }
-.main .profile-box .info-box .tickText h5 {
+.main .light .info-box .tickText h5 {
+  color: #9d9d9d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .dark {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #132027;
+}
+.main .dark .img-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main .dark .img-box img {
+  border: none;
+  border-radius: 50%;
+}
+.main .dark .info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .dark .info-box .nameTime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .dark .info-box .nameTime h3 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .dark .info-box .nameTime h5 {
+  color: #9d9d9d;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .dark .info-box .tickText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.main .dark .info-box .tickText a {
+  text-decoration: none;
+}
+.main .dark .info-box .tickText a i {
+  color: #00e676;
+}
+.main .dark .info-box .tickText h5 {
   color: #9d9d9d;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;

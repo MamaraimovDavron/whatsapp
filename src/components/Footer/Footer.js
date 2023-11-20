@@ -1,9 +1,13 @@
 import React from "react";
 import "./footer.scss";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const Footer = () => {
+  const theme = useContext(ThemeContext);
+
   return (
-    <div className="footer">
+    <div className={`footer ${theme === "light" ? "dark" : "light"}`}>
       <div className="btns">
         <div className="footerIcons">
           <a href="!#" className="first">

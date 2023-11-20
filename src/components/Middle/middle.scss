@@ -7,12 +7,13 @@
   background-color: white;
   border-radius: 20px;
 
-  .profile-box {
+  .light {
     // border: 1px solid green;
     display: flex;
     padding: 10px 20px;
     flex-direction: row;
     gap: 10px;
+    background-color: #fff;
     .img-box {
       display: flex;
       flex-direction: row;
@@ -37,6 +38,84 @@
         justify-content: space-between;
         h3 {
           color: #4e4e4e;
+
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          //   font-weight: 450;
+          line-height: normal;
+          letter-spacing: -0.333px;
+        }
+
+        h5 {
+          color: #9d9d9d;
+          text-align: right;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.333px;
+        }
+      }
+
+      .tickText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        a {
+          text-decoration: none;
+          i {
+            color: #00e676;
+          }
+        }
+
+        h5 {
+          color: #9d9d9d;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.333px;
+        }
+      }
+    }
+  }
+
+  .dark {
+    // border: 1px solid green;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #132027;
+    .img-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      img {
+        border: none;
+        border-radius: 50%;
+      }
+    }
+
+    .info-box {
+      //   border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      justify-content: center;
+      .nameTime {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+          color: #fff;
 
           font-family: Arial, Helvetica, sans-serif;
           font-size: 16px;

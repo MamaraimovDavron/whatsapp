@@ -10,26 +10,43 @@
   flex-direction: column;
   margin: 50px auto;
 }
-.main .header-app {
+.main .header .light {
   display: flex;
   padding: 8px 14px 18px 21px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #005047;
-  border-radius: 20px 20px 0 0;
 }
-.main .header-app .time h4 {
+.main .header .light .time h4 {
   color: white;
 }
-.main .header-app .icons {
+.main .header .light .icons {
   display: flex;
   flex-direction: row;
   gap: 3px;
   align-items: center;
   justify-content: center;
 }
-.main .body-app {
+.main .header .dark {
+  display: flex;
+  padding: 8px 14px 18px 21px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #090e11;
+}
+.main .header .dark .time h4 {
+  color: white;
+}
+.main .header .dark .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.main .light {
   background-color: #075e54;
   display: flex;
   flex-direction: row;
@@ -37,7 +54,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.main .body-app .text h1 {
+.main .light .text h1 {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
@@ -46,16 +63,47 @@
   line-height: normal;
   letter-spacing: -0.333px;
 }
-.main .body-app .search-box {
+.main .light .search-box {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-.main .body-app .search-box a {
+.main .light .search-box a {
   text-decoration: none;
   color: white;
 }
-.main .body-app .search-box a i {
+.main .light .search-box a i {
+  width: 20.016px;
+  height: 20.016px;
+  flex-shrink: 0;
+}
+.main .dark {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .dark .text h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: -0.333px;
+}
+.main .dark .search-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.main .dark .search-box a {
+  text-decoration: none;
+  color: white;
+}
+.main .dark .search-box a i {
   width: 20.016px;
   height: 20.016px;
   flex-shrink: 0;

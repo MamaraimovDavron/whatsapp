@@ -1,4 +1,5 @@
 import React from "react";
+import { useContext } from "react";
 import Header from "../Header/Header";
 import Middle from "../Middle/Middle";
 import img1 from "../../images/abhishek.png";
@@ -9,8 +10,10 @@ import img5 from "../../images/Ellipse 9 (2).png";
 import img6 from "../../images/Ellipse 9 (3).png";
 import img8 from "../../images/Ellipse 7.png";
 import Footer from "../Footer/Footer";
+import ThemeContext from "../context/ThemeContext";
 
 const Main = (props) => {
+  const theme = useContext(ThemeContext);
   return (
     <div className="main">
       <Header />

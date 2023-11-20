@@ -1,11 +1,14 @@
-/* eslint-disable jsx-a11y/alt-text */
+import { useContext } from "react";
 import React from "react";
+import ThemeContext from "../context/ThemeContext";
 import "./middle.scss";
 
 const Middle = (props) => {
+  const theme = useContext(ThemeContext);
+
   return (
     <div className="middle">
-      <div className="profile-box">
+      <div className={`${theme === "light" ? "dark" : "light"}`}>
         <div className="img-box">
           <img src={props.imgUrl} />
         </div>

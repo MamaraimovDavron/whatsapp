@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.scss";
+import { useContext } from "react";
 import connection from "../../icons/Cellular Connection.png";
 import wifi from "../../icons/Wifi.png";
 import battery from "../../icons/Battery.png";
@@ -9,13 +10,25 @@ import img2 from "../../images/Ellipse 7.png";
 import img3 from "../../images/Ellipse 8.png";
 import img4 from "../../images/Ellipse 9.png";
 import imgMini from "../../images/Group 21.png";
+import ThemeContext from "../context/ThemeContext";
 
 const Header = () => {
+  // const context = useContext(ThemeContext);
+  // console.log(context);
+
+  const theme = useContext(ThemeContext);
+
+  let currentDate = new Date();
+  let minutes = currentDate.getHours();
+  let seconds = currentDate.getMinutes();
+
+  // console.log(theme);
   return (
     <div className="header">
-      <div className="header-app">
+      {/* ${headerTheme ? "dark" : "light"} */}
+      <div className={`header-app ${theme === "light" ? "dark" : "light"}`}>
         <div className="time">
-          <h4>9:41</h4>
+          <h4>{`${minutes} : ${seconds < 10 ? `0${seconds}` : seconds} `}</h4>
         </div>
         <div className="icons">
           <img src={connection} alt="" />
@@ -23,20 +36,22 @@ const Header = () => {
           <img src={battery} alt="" />
         </div>
       </div>
-      <div className="body-app">
-        <div className="text">
-          <h1>WhatsApp</h1>
-        </div>
-        <div className="search-box">
-          <a href="!#">
-            <i class="bi bi-search"></i>
-          </a>
-          <a href="!#">
-            <i class="bi bi-three-dots-vertical"></i>
-          </a>
+      <div className="body">
+        <div className={`bodyLight ${theme === "light" ? "dark" : "light"}`}>
+          <div className="text">
+            <h1>WhatsApp</h1>
+          </div>
+          <div className="search-box">
+            <a href="!#">
+              <i class="bi bi-search"></i>
+            </a>
+            <a href="!#">
+              <i class="bi bi-three-dots-vertical"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="footer-app">
+      <div className={`footer-app ${theme === "light" ? "dark" : "light"}`}>
         <div className="box">
           <div className="avatar">
             <img src={img1} alt="" />
