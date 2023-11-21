@@ -14,9 +14,10 @@ import ThemeContext from "../context/ThemeContext";
 
 const Main = (props) => {
   const theme = useContext(ThemeContext);
+
   return (
     <div className="main">
-      <Header />
+      <Header theme={theme} />
       <Middle
         imgUrl={img1}
         name="Abhishek Bro"
