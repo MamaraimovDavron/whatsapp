@@ -3,6 +3,7 @@ import Main from "./components/Main/Main";
 import { useState } from "react";
 // import { useContext } from "react";
 import ThemeContext from "./components/context/ThemeContext";
+import { useCallback } from "react";
 
 const App = () => {
   const [theme, setHeaderTheme] = useState({
@@ -11,9 +12,9 @@ const App = () => {
   });
   // const theme = useContext(ThemeContext);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setHeaderTheme(theme === "light" ? "dark" : "light");
-  };
+  });
 
   console.log(theme.body);
 
