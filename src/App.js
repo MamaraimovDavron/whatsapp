@@ -5,7 +5,7 @@ import Main from "./components/Main/Main";
 // import { useContext } from "react";
 import ThemeContext from "./components/context/ThemeContext";
 // import { useCallback } from "react";
-import { useReducer } from "react";
+import { useReducer, memo } from "react";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -46,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default memo(App);
