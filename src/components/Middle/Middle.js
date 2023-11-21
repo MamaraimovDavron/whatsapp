@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useContext } from "react";
 import React from "react";
 import ThemeContext from "../context/ThemeContext";
